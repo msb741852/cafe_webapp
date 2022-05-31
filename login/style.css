@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  background-color: rgb(252, 252, 242);
+  font-family: "Lobster", cursive;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #e2b77e;
+}
+
+span {
+  font-size: 70px;
+  text-shadow: 2px 2px 2px rgb(73, 72, 72);
+}
+
+button {
+  margin: 20px;
+  background-color: rgb(201, 168, 125);
+  border: 1px solid rgb(155, 136, 111);
+  border-radius: 10px;
+  width: 120px;
+  height: 80px;
+  font-size: 20px;
+  color: rgb(75, 72, 69);
+  font-weight: bold;
+  box-shadow: 3px 3px 3px 3px rgb(90, 89, 89);
+}
+
+button:hover {
+  background-color: rgb(180, 146, 104);
+}
+
+.login {
+  display: flex;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form > input {
+  border-radius: 4px;
+  height: 20px;
+  margin-bottom: 5px;
+}
+
+.login > button {
+  background-color: antiquewhite;
+  width: 100px;
+  height: 60px;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="login.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="center">
+        <span>LOGIN</span>
+        <div class="login">
+            <form id="login" action="adminCheck.php" method="POST" name="loginForm">
+                <input type="id" placeholder="010-xxxx-xxxx"  id="id">
+                <input type="password" placeholder="비밀번호"  id="pw">
+                <button type="button" onclick="adminCheck()" form="login">LOGIN</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</body>
+</html>

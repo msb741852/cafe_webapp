@@ -1,0 +1,202 @@
+.content {
+  display: none;
+}
+
+button {
+  background-color: cornsilk;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(252, 252, 242);
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+section {
+  margin: 0;
+}
+
+.navbar {
+  background-color: #6d4c41;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar_logo {
+  font-family: "Lobster", cursive;
+  font-size: 28px;
+  color: rgb(230, 219, 179);
+  margin-left: 8px;
+}
+
+.navbar_menu {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+}
+
+.navbar_menu li {
+  padding: 8px 12px;
+  margin-left: 5vh;
+  color: rgb(230, 219, 179);
+}
+
+.navbar_menu li:hover {
+  background-color: #946d60;
+  border-radius: 4px;
+}
+
+.navbar_menu li a,
+#menuManage {
+  color: rgb(230, 219, 179);
+}
+
+#menuManage_sub,
+#notice_sub {
+  text-align: center;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: #946d60;
+  position: absolute;
+  display: none;
+  margin-left: -12px;
+  margin-top: 5px;
+}
+
+#menuManage_sub li,
+#notice_sub li {
+  margin-left: 0;
+  padding: 8px 8px;
+  margin-left: 10px;
+}
+
+#menuManage:hover #menuManage_sub,
+#notice:hover #notice_sub {
+  display: flex;
+}
+
+#menuManage_sub li:hover,
+#notice_sub li:hover {
+  background-color: #ad8274;
+}
+
+.navbar_blog {
+  margin-right: 8px;
+}
+
+.navbar_blog i {
+  color: rgb(230, 219, 179);
+  font-size: 21px;
+}
+
+.pageName {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  margin-top: 8vh;
+}
+
+.choicedMenu {
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  width: 50%;
+  height: 450px;
+  margin-top: 20px;
+}
+
+.choicedMenu th {
+  padding: 20px;
+}
+
+.phoneNumber {
+  position: absolute;
+  bottom: 16vh;
+  right: 40px;
+}
+
+.phoneNum {
+  width: 40px;
+}
+
+.payInfo {
+  position: absolute;
+  bottom: 10vh;
+  right: 40px;
+}
+
+#payBtn {
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #8d736a;
+}
+
+#menuChoice {
+  text-align: center;
+}
+
+.tabMenu {
+  width: 600px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.tabNav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+li .tabBtn {
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.tabBtn.clicked {
+  background-color: antiquewhite;
+}
+
+.tabContent {
+  border: 1px solid;
+  border-radius: 4px;
+}
+
+.content {
+  overflow: auto;
+  padding: 20px;
+  height: 250px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.menuBtn {
+  width: 33%;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 4px;
+}
+
+.menuBtn:hover {
+  background-color: antiquewhite;
+}
+
+.number input {
+  width: 15px;
+  border: none;
+  background-color: transparent;
+}

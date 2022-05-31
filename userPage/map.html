@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/57b67e461c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <span class="navbar_logo">O'fete</span>
+        <ul class="navbar_menu">
+            <li><a href="home.html">홈</a></li>
+            <li><a href="noticeBoard.php">공지사항</a></li>
+            <li><a href="menu_Introduce.php">메뉴판</a></li>
+            <li><a href="map.html">오시는 길</a></li>
+        </ul>
+        <a href="https://blog.naver.com/ofete1588/220842438016" class="navbar_blog"><i class="fas fa-blog"></i></a>
+    </nav>
+
+    <div id="map" style="width:100%; height:500px;">
+        지도가 들어가는 영역!
+        </div>
+        <script type="text/javaScript">
+        function initMap() {
+             const map = new google.maps.Map(document.getElementById("map"), {
+                 zoom: 18,
+                 center: { lat: 37.486047, lng: 126.968411}, // 지도의 중심 좌표
+             });
+        
+             // 마커 정보
+             var locations = [
+                    {testId: 'location01', lat:37.486047, lng: 126.968411},
+                    {testId: 'location02', lat: 37.486047, lng: 126.968411}
+             ];
+        
+             // 마커 생성
+             for (var i = 0; i < locations.length; i++) {
+                 var mapIcon = new google.maps.MarkerImage(); // 이미지 파일 경로를 설정해주면 다른 마커아이콘을 쓸 수 있음!
+                         // 현재 위치 마커
+                     var marker = new google.maps.Marker({
+                     map: map,
+                     position: new google.maps.LatLng(locations[i].lat, locations[i].lng),
+                     icon: mapIcon
+                 });
+        
+                 google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                     return function() {
+                         // 마커 클릭시 실행할 이벤트를 설정해줄 수 있다
+                        alert(locations[i].testId);
+                     }
+                 })(marker, i));
+             }
+        }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhDdK5OkGh5UTlQDbWutpDgxNqY2hpcRs&callback=initMap&libraries=&v=weekly" async></script>
+        <p>오시는길:</p>
+        <p>주소:사당로 178 오페뜨 카페 총신대점 1층</p>
+        <p>대중교통 지하철: 7호선 남성역 하차 후 2번 출구에서 현대자동차 동작대리점 방향으로 도보로 약 10분거리</p>
+        
+</body>
+</html>
+
+

@@ -1,0 +1,185 @@
+button {
+  background-color: cornsilk;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(252, 252, 242);
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+section {
+  margin: 0;
+}
+
+.navbar {
+  background-color: #6d4c41;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar_logo {
+  font-family: "Lobster", cursive;
+  font-size: 28px;
+  color: rgb(230, 219, 179);
+  margin-left: 8px;
+}
+
+.navbar_menu {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+}
+
+.navbar_menu li {
+  padding: 8px 12px;
+  margin-left: 5vh;
+}
+
+.navbar_menu li:hover {
+  background-color: #946d60;
+  border-radius: 4px;
+}
+
+.navbar_menu li a {
+  color: rgb(230, 219, 179);
+}
+
+.navbar_blog {
+  margin-right: 8px;
+}
+
+.navbar_blog i {
+  color: rgb(230, 219, 179);
+  font-size: 21px;
+}
+
+.table_div {
+  display: flex;
+}
+
+table {
+  text-align: center;
+  margin: 10vh 10vw;
+  width: 100%;
+  border-collapse: collapse;
+  border: 10px solid rgb(229, 233, 222);
+}
+
+.table_Head th:nth-child(1) {
+  width: 10%;
+}
+
+.table_Head th:nth-child(2) {
+  width: 20%;
+}
+
+.table_Head th:nth-child(3) {
+  width: 50%;
+}
+
+.table_Head th:nth-child(4) {
+  width: 20%;
+}
+
+th {
+  letter-spacing: 2px;
+  padding: 10px;
+  background-color: rgb(207, 195, 179);
+}
+
+td {
+  padding: 20px;
+  letter-spacing: 1px;
+}
+
+tbody td {
+  text-align: center;
+}
+
+.table_active th,
+.table_active td {
+  padding: 5px;
+  border: 1px solid rgb(229, 233, 222);
+}
+
+.table_active th {
+  width: 20vw;
+}
+
+.td_title {
+  border-bottom: 1px solid rgb(229, 233, 222);
+}
+
+.page_box {
+  text-align: center;
+}
+
+.page_box a {
+  padding: 10px;
+}
+
+img {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.cur_img {
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+}
+
+.no_active {
+  display: none;
+}
+
+.no_active.active {
+  display: flex;
+}
+
+.section_button_menu {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.section_button_menu button {
+  padding: 20px;
+  border-radius: 4px;
+  border: 1px solid rgb(174, 189, 127);
+
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.section_div_menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.div_menu {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.div_column {
+  display: flex;
+  justify-content: space-between;
+}
+
+.div_menu > div {
+  padding: 20px;
+}

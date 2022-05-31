@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  background-color: rgb(252, 252, 242);
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+section {
+  margin: 0;
+}
+
+.navbar {
+  background-color: #6d4c41;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar_logo {
+  font-family: "Lobster", cursive;
+  font-size: 28px;
+  color: rgb(230, 219, 179);
+  margin-left: 8px;
+}
+
+.navbar_menu {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+}
+
+.navbar_menu li {
+  padding: 8px 12px;
+  margin-left: 5vh;
+  color: rgb(230, 219, 179);
+}
+
+.navbar_menu li:hover {
+  background-color: #946d60;
+  border-radius: 4px;
+}
+
+.navbar_menu li a,
+#menuManage {
+  color: rgb(230, 219, 179);
+}
+
+#menuManage_sub,
+#notice_sub {
+  text-align: center;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: #946d60;
+  position: absolute;
+  display: none;
+  margin-left: -12px;
+  margin-top: 5px;
+}
+
+#menuManage_sub li,
+#notice_sub li {
+  margin-left: 0;
+  padding: 8px 8px;
+  margin-left: 10px;
+}
+
+#menuManage:hover #menuManage_sub,
+#notice:hover #notice_sub {
+  display: flex;
+}
+
+#menuManage_sub li:hover,
+#notice_sub li:hover {
+  background-color: #ad8274;
+}
+
+.navbar_blog {
+  margin-right: 8px;
+}
+
+.navbar_blog i {
+  color: rgb(230, 219, 179);
+  font-size: 21px;
+}
+
+.navbar_menu li a,
+#secondBro {
+  color: rgb(230, 219, 179);
+}
+
+#secondMenu {
+  text-align: center;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: #946d60;
+  position: absolute;
+  display: none;
+  margin-left: -12px;
+  margin-top: 5px;
+}
+
+#secondMenu li {
+  margin-left: 0;
+  padding: 8px 8px;
+  margin-left: 10px;
+}
+
+#secondBro:hover #secondMenu {
+  display: flex;
+}
+
+#secondMenu li:hover {
+  background-color: #ad8274;
+}
+
+.order_list {
+  justify-content: center;
+  text-align: center;
+  height: 80vh;
+  overflow: auto;
+}
+
+table {
+  width: 80%;
+  margin: 10%;
+  border-collapse: collapse;
+  border: 2px solid #946d60;
+}
+
+thead > tr {
+  background-color: #946d60;
+  color: rgb(241, 241, 201);
+}
+
+tbody > tr {
+  padding-top: 40px;
+}
+
+tr > td {
+  padding: 10px;
+}
+
+.payment {
+  display: none;
+}
+
+.status {
+  display: none;
+}
+
+.submitBtn {
+  padding: 20px;
+  background-color: #d2b8a1;
+  border-radius: 4px;
+}
+
+.time {
+  display: none;
+}
